@@ -15,7 +15,7 @@ router.post('/domestic',validateCreate,  domesticController.createOrder);
 router.get('/domestic', domesticController.getAllOrders);
 router.get('/domestic/:id', validateGetOrderById , domesticController.getOrderById);
 router.post('/register', register);
-router.get('/login', validateAdminlogin,  login);
+router.post('/login', validateAdminlogin, login);
 router.post('/contact',validatecontact, contactsController.createContact );
 router.get('/contact', contactsController.getAllContacts );  
 
